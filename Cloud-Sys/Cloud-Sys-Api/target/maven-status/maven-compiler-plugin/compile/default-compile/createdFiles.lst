@@ -1,0 +1,4 @@
+com\sc\api\service\AdminLogFallbackFactory.class
+com\sc\api\service\AdminLogService.class
+com\sc\api\mapper\AdminLogMapper.class
+com\sc\api\entity\AdminLog.class

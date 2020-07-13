@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cloud.iml" filepath="$PROJECT_DIR$/Cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Admin-Server/Cloud-Admin-Server.iml" filepath="$PROJECT_DIR$/Cloud-Admin-Server/Cloud-Admin-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Api/Cloud-Api.iml" filepath="$PROJECT_DIR$/Cloud-Api/Cloud-Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Authorization-Core/Cloud-Authorization-Core.iml" filepath="$PROJECT_DIR$/Cloud-Authorization-Core/Cloud-Authorization-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Authorization-Server/Cloud-Authorization-Server.iml" filepath="$PROJECT_DIR$/Cloud-Authorization-Server/Cloud-Authorization-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Config/Cloud-Config.iml" filepath="$PROJECT_DIR$/Cloud-Config/Cloud-Config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Consumer/Cloud-Consumer.iml" filepath="$PROJECT_DIR$/Cloud-Consumer/Cloud-Consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Eureka/Cloud-Eureka.iml" filepath="$PROJECT_DIR$/Cloud-Eureka/Cloud-Eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Hystrix-dashboard/Cloud-Hystrix-dashboard.iml" filepath="$PROJECT_DIR$/Cloud-Hystrix-dashboard/Cloud-Hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-MQ/Cloud-MQ.iml" filepath="$PROJECT_DIR$/Cloud-MQ/Cloud-MQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Provider/Cloud-Provider.iml" filepath="$PROJECT_DIR$/Cloud-Provider/Cloud-Provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Provider-8002/Cloud-Provider-8002.iml" filepath="$PROJECT_DIR$/Cloud-Provider-8002/Cloud-Provider-8002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Redis/Cloud-Redis.iml" filepath="$PROJECT_DIR$/Cloud-Redis/Cloud-Redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cloud-Zuul/Cloud-Zuul.iml" filepath="$PROJECT_DIR$/Cloud-Zuul/Cloud-Zuul.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+com\sc\admin\server\SecuritySecureConfig.class
+com\sc\admin\server\Admin_Server_App.class
+com\sc\admin\server\Admin_Server_App$SecuritySecureConfig.class
+com\sc\admin\server\Admin_Server_App$SecurityPermitAllConfig.class

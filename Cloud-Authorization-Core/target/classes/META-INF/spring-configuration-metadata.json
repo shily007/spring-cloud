@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "com.sc.security",
+      "type": "com.sc.security.properties.SecurityProperties",
+      "sourceType": "com.sc.security.properties.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.sc.security.code",
+      "type": "com.sc.security.properties.AuthCodeProperties",
+      "sourceType": "com.sc.security.properties.SecurityProperties"
+    },
+    {
+      "name": "com.sc.security.oauth2",
+      "type": "com.sc.security.properties.Oauth2Properties",
+      "sourceType": "com.sc.security.properties.SecurityProperties"
+    }
+  ],
+  "hints": []
+}

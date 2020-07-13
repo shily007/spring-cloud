@@ -1,0 +1,12 @@
+com\sc\api\base\BaseEntity$DetailView.class
+com\sc\api\base\BaseService.class
+com\sc\api\utils\WebUtil.class
+com\sc\api\utils\JsonResult.class
+com\sc\api\base\BaseFallbackFactory$1.class
+com\sc\api\base\BaseEntity.class
+com\sc\api\base\BaseServiceImpl.class
+com\sc\api\base\BaseFallbackFactory.class
+com\sc\api\utils\Constant.class
+com\sc\api\base\BaseController.class
+com\sc\api\utils\LoggerUtil.class
+com\sc\api\base\BaseEntity$SimpleView.class

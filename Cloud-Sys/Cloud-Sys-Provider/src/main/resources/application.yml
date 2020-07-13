@@ -1,0 +1,60 @@
+server:
+  port: 8001
+  
+spring: 
+  application:
+    name: "@project.artifactId@"
+  datasource: 
+    name: mysql
+    platform: mysql
+    url: jdbc:mysql://192.168.2.111:3306/cloud?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=Hongkong
+    username: root 
+    password: centos7   
+    driver-class-name: com.mysql.cj.jdbc.Driver  # mysql驱动包         
+    continue-on-error: false
+                                                   
+    dbcp2:
+      min-idle: 5                             # 数据库连接池的最小维持连接数
+      initial-size: 5                         # 初始化连接数
+      max-total: 5                            # 最大连接数  
+      max-wait-millis: 200                    # 等待连接获取的最大超时时间
+  main:
+    allow-bean-definition-overriding: true
+   
+  jmx:
+    enabled: false
+
+  redis:
+    host: 192.168.2.111
+    port: 6379
+    
+#  boot:
+#    admin:
+#      client:
+#        url: http://user:111@localhost:6001  
+feign:
+  hystrix:
+    enabled: true  
+     
+eureka: 
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://user:111@localhost:7001/eureka/ 
+#       defaultZone: http://eureka7001.com:7001/eureka/ #,http://eureka7002.com:7002/eureka/,  http://eureka7003.com:7003/eureka/ 
+  instance:
+    instance-id: "@project.artifactId@"
+    prefer-ip-address: true     #访问路径可以显示IP地址 
+ 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    
+#本服务的说明 
+info: 
+  app.name: "@project.artifactId@"
+  company.name: www.dy.com
+  build.artifactId: "@project.artifactId@"
+  build.version: "@project.version@"
+

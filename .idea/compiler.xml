@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Cloud-Admin-Server" />
+        <module name="Cloud-Api" />
+        <module name="Cloud-Authorization-Core" />
+        <module name="Cloud-Authorization-Server" />
+        <module name="Cloud-Config" />
+        <module name="Cloud-Consumer" />
+        <module name="Cloud-Eureka" />
+        <module name="Cloud-Hystrix-dashboard" />
+        <module name="Cloud-MQ" />
+        <module name="Cloud-Provider" />
+        <module name="Cloud-Provider-8002" />
+        <module name="Cloud-Redis" />
+        <module name="Cloud-Zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Cloud" target="1.8" />
+      <module name="Cloud-Admin-Server" target="1.8" />
+      <module name="Cloud-Api" target="1.8" />
+      <module name="Cloud-Authorization-Core" target="1.8" />
+      <module name="Cloud-Authorization-Server" target="1.8" />
+      <module name="Cloud-Config" target="1.8" />
+      <module name="Cloud-Consumer" target="1.8" />
+      <module name="Cloud-Eureka" target="1.8" />
+      <module name="Cloud-Hystrix-dashboard" target="1.8" />
+      <module name="Cloud-MQ" target="1.8" />
+      <module name="Cloud-Provider" target="1.8" />
+      <module name="Cloud-Provider-8002" target="1.8" />
+      <module name="Cloud-Redis" target="1.8" />
+      <module name="Cloud-Zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

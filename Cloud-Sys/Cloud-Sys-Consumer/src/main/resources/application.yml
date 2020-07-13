@@ -1,0 +1,67 @@
+server:
+  port: 80
+  
+spring:
+  application:
+    name: "@project.artifactId@"
+  main: 
+    allow-bean-definition-overriding: true
+#  security:
+#    user:
+#      name: user
+#      password: 111
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8000  
+  redis:
+    host: 192.168.2.111
+    port: 6379
+
+ribbon:
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 120000
+          semaphore:
+            maxConcurrentRequests: 10000
+#      circuitBreaker:
+#        sleepWindowInMilliseconds: 5000
+      fallback:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 50
+        
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+        
+feign: 
+  hystrix: 
+    enabled: true
+    
+eureka: 
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://user:111@localhost:7001/eureka/
+  instance:
+    instance-id: "@project.artifactId@"
+    prefer-ip-address: true     #访问路径可以显示IP地址 
+    
+info: 
+  app.name: "@project.artifactId@"
+  company.name: www.dy.com
+  build.artifactId: "@project.artifactId@"
+  build.version: "@project.version@"
+    

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Admin-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Authorization-Core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Authorization-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-MQ" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Provider-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cloud-Zuul" charset="UTF-8" />
+  </component>
+</project>
