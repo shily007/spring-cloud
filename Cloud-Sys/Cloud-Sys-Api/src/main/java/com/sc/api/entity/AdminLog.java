@@ -1,5 +1,8 @@
 package com.sc.api.entity;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.sc.api.base.BaseEntity;
@@ -27,11 +30,14 @@ public class AdminLog extends BaseEntity {
     /**
      * 操作内容
      */
+    @NotBlank
     private String content;
 
     /**
      * 操作人
      */
+    @NotBlank
+    @Size(min = 5,max = 18)
     private String creater;
 
     /**
@@ -42,6 +48,7 @@ public class AdminLog extends BaseEntity {
     /**
      * 内网IP
      */
+    @Size(min = 15,max = 15)
     @TableField("innerIp")
     private String innerIp;
 

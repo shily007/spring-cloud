@@ -1,4 +1,4 @@
-package com.sc.api.base;
+package com.sc;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -23,6 +23,8 @@ import com.baomidou.mybatisplus.core.toolkit.ReflectionKit;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.toolkit.SqlHelper;
+import com.sc.api.base.BaseEntity;
+import com.sc.api.base.BaseService;
 
 public class BaseServiceImpl<M extends BaseMapper<T>, T extends BaseEntity> implements BaseService<T> {
 
@@ -184,9 +186,8 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T extends BaseEntity> impl
 	}
 	
 	@Override
-	public IPage<T> page(IPage<T> page) {
-		IPage<T> selectPage = baseMapper.selectPage(page,Wrappers.emptyWrapper());
-		return (Page<T>) selectPage;
+	public Page<T> page(Page<T> page) {
+		return (Page<T>) baseMapper.selectPage(page,Wrappers.emptyWrapper());
 	}		
 
 	@Override

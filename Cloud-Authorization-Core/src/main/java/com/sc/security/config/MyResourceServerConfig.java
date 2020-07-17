@@ -27,15 +27,15 @@ public class MyResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		http.formLogin()
-				.loginProcessingUrl("/authentication/form").successHandler(myAuthenticationSuccessHandler)
+		http.formLogin().loginProcessingUrl("/authentication/form").successHandler(myAuthenticationSuccessHandler)
 				.failureHandler(myAuthenticationFailureHandler);
 		http.authorizeRequests()
 				// 不需要验证的页面
 				.antMatchers("/code/*", "/swagger-ui.html", "/**/*.css", "/**/*.js", "/**/*.css?*", "**.js?*",
 						"/**/*.html", "/swagger*/**", "/webjars/**", "/v2/**", "/file/**", "/show/**", "/publicKey",
 						"/validateCode/**", "/signUp.html", SecurityConstants.DEFAULT_LOGIN_PROCESSING_URL_MOBILE,
-						"/qqLogin/**", SecurityConstants.DEFAULT_LOGIN_PROCESSING_URL_EMAIL)
+						"/qqLogin/**", "/actuator", "/actuator/*", "/", "/turbine.*", "/hystrix.*", "/hystrix/*",
+						SecurityConstants.DEFAULT_LOGIN_PROCESSING_URL_EMAIL)
 				.permitAll().anyRequest().authenticated().and().csrf().disable();
 
 	}

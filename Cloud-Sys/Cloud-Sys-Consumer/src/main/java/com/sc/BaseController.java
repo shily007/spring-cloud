@@ -1,16 +1,18 @@
-package com.sc.api.base;
+package com.sc;
 
 import java.io.Serializable;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.sc.api.base.BaseEntity;
+import com.sc.api.base.BaseService;
 import com.sc.api.utils.JsonResult;
 
 public class BaseController<M extends BaseService<T>, T extends BaseEntity> {
@@ -26,7 +28,7 @@ public class BaseController<M extends BaseService<T>, T extends BaseEntity> {
 	 * @author dy 2020年7月13日
 	 */
 	@PostMapping
-	public JsonResult<Boolean> save(T entity) {
+	public JsonResult<Boolean> save(@Validated T entity) {
 		if (entity == null) {
 			return new JsonResult<>(1001);
 		}
@@ -89,7 +91,7 @@ public class BaseController<M extends BaseService<T>, T extends BaseEntity> {
 	 * @author dy 2020年7月13日
 	 */
 	@GetMapping("page")
-	public JsonResult<IPage<T>> page(Page<T> page) {
+	public JsonResult<Page<T>> page(Page<T> page) {
 		return new JsonResult<>(service.page(page));
 	}
 

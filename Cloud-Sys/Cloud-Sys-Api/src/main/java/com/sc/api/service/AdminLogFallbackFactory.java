@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.sc.api.entity.AdminLog;
 import com.sc.api.utils.LoggerUtil;
 
@@ -87,7 +88,7 @@ public class AdminLogFallbackFactory implements FallbackFactory<AdminLogService>
 			}
 			
 			@Override
-			public IPage<AdminLog> page(IPage<AdminLog> page) {
+			public Page<AdminLog> page(Page<AdminLog> page) {
 				return null;
 			}
 
